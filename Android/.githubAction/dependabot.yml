@@ -1,0 +1,14 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "gradle"      # 指定使用Gradle作为包管理系统
+    directory: "/"                  # 指定项目的目录，"/"代表项目的根目录
+    schedule:
+      interval: "monthly"           # 指定更新频率
+    open-pull-requests-limit: 10    # 限制同时打开的PR数量
+    reviewers:
+      - "keaikeqing"      # 当Dependabot创建一个PR时，自动指定一个reviewer。替换为您的GitHub用户名。
